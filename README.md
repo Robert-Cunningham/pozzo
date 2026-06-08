@@ -45,7 +45,16 @@ Note that this does not bound the maximum size of the numbers we can prove lucky
 3. Otherwise update `rank -= rank / l`.
 4. Once `rank < l`, the candidate has survived all future deletions and is lucky.
 
-## Sequences
+## Motivation
+> And what hackathon project are you presenting today? 
+
+> The integer 4,398,046,511,103.
+
+After spending several hackathons making things like "Uber for dogs with hearing loss", I decided that my next project would be an off-the-shelf integer. It was a very [Duchamp](https://en.wikipedia.org/wiki/Fountain_(Duchamp)) era of my life.
+
+I wanted to extend an [OEIS](https://oeis.org/) sequence, but which one? Ideally one where the values are rare enough to be exciting, but not so rare that we can't find a new one. Lucky numbers are distributed like $\log^{-1}(p)$, so sequences involving intersections with lucky numbers make reasonable targets. For example, [A057613](https://oeis.org/A057613) (lucky numbers of the form `2^k - 1`) is very promising.
+
+## Results
 Bold values are newly discovered.
 
 ### Lucky Repdigits
@@ -146,17 +155,6 @@ The reported run took about 12 hours on a machine with 128GB of RAM. The sieve c
 cargo test
 cargo run --release -- --memory-mib 114688
 ```
-
-
-## Motivation
-> And what hackathon project are you presenting today? 
-
-> The integer 4,398,046,511,103.
-
-After spending several hackathons making things like "Uber for dogs with hearing loss", I decided that my next project would be an off-the-shelf integer. It was a very [Duchamp](https://en.wikipedia.org/wiki/Fountain_(Duchamp)) era of my life.
-
-I wanted to extend an [OEIS](https://oeis.org/) sequence, but which one? Ideally one where the values are rare enough to be exciting, but not so rare that we can't find a new one. Lucky numbers are distributed like $\log^{-1}(p)$, so sequences involving intersections with lucky numbers make reasonable targets. For example, [A057613](https://oeis.org/A057613) (lucky numbers of the form `2^k - 1`) is very promising.
-
 
 ## What's with the name?
 From *[Waiting for Godot](https://www.sensortime.com/think_pig.html)*.
