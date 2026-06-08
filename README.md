@@ -78,9 +78,9 @@ Search space expanded by a factor of $8 * 10^5$.
 
 [A057613](https://oeis.org/A057613): Lucky numbers of the form `2^k - 1`.
 
-Old bound: `a(20) >= 17179869183`
+Old bound: `a(20) >= 2^34 - 1`
 
-New bound: `a(23) >= 562949953421311`
+New bound: `a(23) >= 2^49 - 1`
 
 Search space expanded by a factor of $3 * 10^4$.
 
@@ -92,7 +92,7 @@ Search space expanded by a factor of $3 * 10^4$.
 
 Old bound: `a(9) > 2^31 - 1`
 
-New bound: `a(9) >= 576460752303423487`
+New bound: `a(9) >= 2^59 - 1`
 
 Search space expanded by a factor of $3 * 10^8$.
 
